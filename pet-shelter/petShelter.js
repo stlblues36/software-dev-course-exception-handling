@@ -1,32 +1,3 @@
-/*
-Scenario:
-You’ve been hired to help a local pet shelter digitize its animal adoption records. The program is meant to:
-  
-  Allow users to enter an animal type and adoption fee.
-  
-  Add the animal and fee to a list.
-  
-  Retrieve the adoption fee for a specific animal when requested.
-
-However, the initial developer left the program in a buggy state, with missing exception-handling logic
-and some errors in the implementation. Your job is to fix it!
-
-
-
-Instructions
-Start by Understanding the Errors:
-Run the program and observe the exceptions that occur. Document what the exceptions are and where they happen.
-
-Write Exception Handling Code:
-Use try/catch blocks to handle the errors so the program doesn’t crash when incorrect input or unexpected situations occur.
-
-Test and Debug:
-Test the program with valid and invalid inputs to confirm that exceptions are handled gracefully
-and the program continues running as intended.
-*/
-
-
-// Will need to import / install readline-sync if not done so already within project dir: npm install readline-sync 
 const readlineSync = require('readline-sync');
 
 let animals = [];
@@ -103,19 +74,3 @@ while (true) {
         console.log("Please try again.");
     }
 }
-
-
-
-/*
-Problems to Solve
-
-Invalid Input Errors:
-  What happens if the user provides a negative adoption fee or leaves the name blank?
-  What happens if the user tries to find the fee for an animal that hasn’t been added?
-
-Code Flow Problems:
-  What happens if the program throws an exception? Does the rest of the code continue running?
-
-Structured Exception Handling:
-  Add try/catch blocks to handle the above errors gracefully.
-*/
